@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #[em EasySoft Employee Record Management System].
+
+  h1 Employee Statics from our MongoDB
+
+  if error
+    p Sorry we cannot display the employee statistics today.
+  else
+    p Easysoft Company limited has the following employee counts:
+
+    ul
+      li #[strong Number of Employees:] !{data.book_count}
+     
+    
